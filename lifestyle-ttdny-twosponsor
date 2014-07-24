@@ -1,0 +1,63 @@
+<div id="contextualWrapper" class="contextChannelEvents">
+	<script type="text/javascript" src="http://api.active.com/widgets/Syndication.aspx?src=wgt&theme=none"></script>
+	<div class="TAN_container_footer">
+		<div class="holding">
+			<img id="search-updating" style="padding:5px 0 0 3px; width:16px;" src="/SiteFiles/3/templates/images/common/spinners/spinner.gif" alt="" />
+			<div id="ttdny_find_more_{<Channels>}_{<Categories>}">
+				<a id="tan_FindMore">Find More&raquo;</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+// read URL since there's multiple channel values
+	var sURL = location.pathname;
+	sURL = sURL.slice(1,sURL.length);
+	finalChar = sURL.slice(sURL.length-1,sURL.length);
+	if (finalChar == '/') sURL = sURL.slice(0,sURL.length-1);
+	if (sURL.indexOf('.htm') != -1) sURL = sURL.slice(0,sURL.length-4);
+	if (sURL.indexOf('.aspx') != -1) sURL = sURL.slice(0,sURL.length-5);	
+	
+	var nURL = sURL.match('nutrition');
+	var fURL = sURL.match('fitness');
+
+// create sponsor
+
+if (fURL!=null) {
+           mccoy = $('TAN_syndication_container').down(1); 
+            bones = $('TAN_syndication_container').down('h3'); 
+            mccoy.identify(''); 
+            bones.identify(''); 
+
+           $('anonymous_element_1').addClassName('pkg'); 
+            if (navigator.userAgent.indexOf('MSIE') != -1) {
+                        $('anonymous_element_2').style.styleFloat = 'left';
+            } 
+            else {
+                        $('anonymous_element_2').style.cssFloat = 'left';
+            }
+            $('anonymous_element_2').insert({
+                        after: '<p style="float:right; margin:2px 0 0 0;"><a href="http://www.eyewonderlabs.com/ct2.cfm?ewbust=0&guid=0&ewadid=201409&eid=20019315&file=http://cdn.eyewonder.com/300125/ads/201409/1/NOSCRIPTfailover.jpg&pnl=MainBanner&type=0&name=Clickthru-NOSCRIPT&num=1&time=0&diff=0&clkX=&clkY=&click=http://www.gatorade.com/default.aspx#home" target="_blank"><img src="/Assets/sponsors/gatorade/g_fit-logo-ttdny.gif" alt="G Series Fit"/></a></p><IMG SRC="http://cdn.eyewonder.com/300125/1000264/20019315/ewtrack.gif?ewadid=201409" BORDER=0 WIDTH=1 HEIGHT=1 ALT="">'
+            });
+}
+
+else if (nURL!=null) {
+            mccoy = $('TAN_syndication_container').down(1); 
+            bones = $('TAN_syndication_container').down('h3'); 
+            mccoy.identify(''); 
+            bones.identify(''); 
+
+           $('anonymous_element_1').addClassName('pkg'); 
+            if (navigator.userAgent.indexOf('MSIE') != -1) {
+                        $('anonymous_element_2').style.styleFloat = 'left';
+            } 
+            else {
+                        $('anonymous_element_2').style.cssFloat = 'left';
+            }
+            $('anonymous_element_2').insert({
+                       after: '<p style="float:right; margin:2px 0 0 0;"><a href="http://ad.doubleclick.net/clk;232737184;56115482;i;pc=[TPAS_ID]" target="_blank"><img src="http://activeqa.dev.activenetwork.com/Assets/sponsors/powerade/TTDNY-Holiday-Run-Powerade.jpg" /></a></p><IMG SRC="http://ad.doubleclick.net/ad/N4390.activenetworkOX2209/B4959754.204;sz=1x1;pc=[TPAS_ID];ord=[timestamp]?" BORDER=0 WIDTH=1 HEIGHT=1 ALT="Powerade">'
+            });
+}
+else {document.write("&nbsp;");}
+
+</script>

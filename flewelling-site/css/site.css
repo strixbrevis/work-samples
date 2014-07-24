@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {margin:0; padding:0; background-color:#361602;}
+div#header {
+	background-image:url(../images/header-jpg-high.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+	float: none;
+	height: 132px;
+	width: 1175px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	display:block;
+}
+#navigation {
+	background-image: url(../images/nav-bg-jpg-high.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+	float: none;
+	height: 152px;
+	width: 1175px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	display:block;
+}
+#main {
+	background-image: url(../images/site-bg-jpghigh-ppr.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+	/*display: block;*/
+	margin: 0px;
+	padding: 0px 140px 0px 0px;
+	clear: both;
+	float: none;
+	width: 1035px;
+	height: auto;
+}
+#content {width:710px; /*height:auto;*/ background-color:transparent; background-image:none; float:right; clear:none; margin:0; padding: 25px 40px; /*display:block;*/ border:none; color:#663300; font-family:Georgia, "Times New Roman", Times, serif; font-size:14px;}
+#leftbar {width:225px; /*height:auto;*/ background-color:transparent; background-image:none; float:right; clear:none; margin:0; padding: 0px 10px; /*display:block;*/ border:none;color:#663300; overflow:auto;font-family:"Merienda One","Comic Sans MS", cursive; font-size:16px; line-height:1.5em;}
+#navbox {background-color:#7e0602; opacity:0.8; width:1039px; height:62px;overflow:visible; float:left;}
+#navigation ul {margin:0px; list-style: none outside none;height:45px;padding:0px 0px 10px 0px; border-bottom:7px solid #000; opacity:1;}
+#navigation li {float:left;margin:0px; width:auto;}
+#navigation a {
+	font-family:"EB Garamond","Palatino Linotype", "Book Antiqua", Palatino, serif;
+	/* [disabled]background-color: transparent; */
+	color:#FFF;
+	text-decoration:none;
+	font-size:32px;
+	font-weight:bold; 
+	display:block;
+	padding:7px 30px;
+}
+#navigation a:hover {background-color:#000;}
+

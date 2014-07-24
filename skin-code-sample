@@ -1,0 +1,44 @@
+
+<script type="text/javascript">
+{
+if(typeof(tile) == "undefined") {var tile = 1;} else if(tile>16) {tile=1;} else {tile++;}
+if(typeof(dcopt) == "undefined"){var dcopt = "dcopt=ist;"} else {var dcopt = ""}
+var banner_ad = '<scr' + 'ipt language="javascript" src="http://ad.doubleclick.net/adj/activecom.tan/' + __tanChannel + '/' + __tanFeature + ';tile=' + tile + ';channel=' + __tanChannel + ';';
+banner_ad += 'subchannel=' + __tanSubChannel + ';tanproduct=activecom;b2borb2c=b2c;feature=' + __tanFeature + ';subfeature1=' + __tanSubFeature1 + ';';
+banner_ad += 'subfeature2=' + __tanSubFeature2 + ';subfeature3=' + __tanSubFeature3 + ';assetid=' + __tanAssetId + ';sz=700x900;position=skin;' + dcopt + 'ord=' + ord + '"></scr' + 'ipt>';
+document.write(banner_ad);
+}
+</script>
+
+<script src="http://ad.doubleclick.net/adj/activecom.tan/running/content;tile=3;channel=running;subchannel=5k;tanproduct=activecom;b2borb2c=b2c;feature=content;subfeature1=section_home;subfeature2=nosubfeature2;subfeature3=nosubfeature3;assetid=d1d6c306-c9a8-4d83-b639-0e4a877c5355;sz=700x900;position=skin;ord=431466" language="javascript">
+document.write('<style>\n#site {top:66px;}\n#top_ads, span#sitetitle{display:none}\n</style>\n\n\n');
+document.observe("dom:loaded", function() {
+document.body.style.backgroundImage = 'url(http://www.active.com/images/assets_ss/Skin_Asics_neo33.jpg)';
+document.body.style.backgroundColor = '#3CABB4';
+var skin_wrapper = document.createElement("div");
+skin_wrapper.setAttribute("id", "skin_wrapper");
+var skin_wrapper_content = document.createElement("a");
+skin_wrapper_content.setAttribute("href", "http://ad.doubleclick.net/click%3Bh%3Dv8/3c60/3/0/%2a/z%3B254936891%3B0-0%3B1%3B43232301%3B18541-700/900%3B47532914/47548432/1%3B%3B%7Esscs%3D%3fhttp://altfarm.mediaplex.com/ad/ck/14559-148165-3663-0?mpt=145597");
+skin_wrapper_content.setAttribute("id", "skin_clicktag");
+skin_wrapper_content.setAttribute("target","_blank");
+skin_wrapper_content.setAttribute("text","Hello");
+skin_wrapper.appendChild(skin_wrapper_content);
+var skin_wrapper_content_img = document.createElement("img");
+skin_wrapper_content_img.setAttribute("src", "http://www.active.com/Assets/Women/makeitpink/home/blank.gif");
+skin_wrapper_content_img.setAttribute("height", "410");
+skin_wrapper_content_img.setAttribute("border", "0");
+skin_wrapper_content_img.setAttribute("id", "skin_clicktag_img");
+skin_wrapper_content_img.setAttribute("text","Hello");
+skin_wrapper_content.appendChild(skin_wrapper_content_img);
+// REMOVE DOUBLE SLASHES IF YOU NEED A 1X1 TRACKER
+// var skin_tracker = document.createElement("img");
+// skin_tracker.setAttribute("src", "");
+var siteDiv = document.getElementById("site");
+var parentDiv = siteDiv.parentNode;
+parentDiv.insertBefore(skin_wrapper, siteDiv);
+// parentDiv.appendChild(skin_tracker);
+});
+document.write('');
+</script>
+
+
